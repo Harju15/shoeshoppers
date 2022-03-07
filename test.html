@@ -8,10 +8,26 @@
     <link rel="stylesheet" href="css/custom.css">
 </head>
 <body>
-    <body>
+    <a href="index.html"><h1>back</h1></a>
+    
         <label class="cameraButton">Take a picture
             <input type="file" accept="image/*" capture>
         </label>
-      </body>
+
+        <video autoplay></video>
+
+<script>
+const constraints = {
+  video: true,
+};
+
+const video = document.querySelector("video");
+
+navigator.mediaDevices.getUserMedia(constraints).then((stream) => {
+  video.srcObject = stream;
+});
+
+</script>
+      
 </body>
 </html>
