@@ -242,7 +242,7 @@ if (hasGetUserMedia()) {
     
     const video = document.querySelector("video");
     
-    navigator.mediaDevices.enumerateDevices(constraints).then((stream) => {
+    navigator.mediaDevices.getUserMedia(constraints).then((stream) => {
       video.srcObject = stream;
     });
     
