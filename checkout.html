@@ -217,7 +217,7 @@
         
     </form>
   </div>
-  
+
 <!--javascript-->
   <div class="camera">
   <label class="cameraButton">Take a picture
@@ -227,13 +227,22 @@
 
 <video autoplay></video>
   <script>
+      function hasGetUserMedia() {
+  return !!(navigator.mediaDevices && navigator.mediaDevices.getUserMedia);
+}
+if (hasGetUserMedia()) {
+  // Good to go!
+} else {
+  alert("getUserMedia() is not supported by your browser");
+}
     const constraints = {
       video: true,
+      Audio: true,
     };
     
     const video = document.querySelector("video");
     
-    navigator.mediaDevices.getUserMedia(constraints).then((stream) => {
+    navigator.mediaDevices.enumerateDevices(constraints).then((stream) => {
       video.srcObject = stream;
     });
     
