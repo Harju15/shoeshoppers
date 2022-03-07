@@ -1,0 +1,249 @@
+.headerimg {
+    width: 100%;
+    height: 10%;
+}
+
+.logo {
+    height: 3rem;
+    width: 3rem;
+}
+
+.row {
+    margin-left: 2rem;
+}
+
+.card {
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+.trans {
+    text-align: center;
+    background-color: black;
+    color: white; 
+    font-size: medium;
+    font-style: italic;
+}
+
+.brand {
+    font-size: larger;
+    text-align: left;
+}
+
+.btn1 {
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  padding: 12px 24px;
+  cursor: pointer;
+  border-radius: 5px;
+  border-color: black;
+}
+
+.crdimg {
+    width: 17rem;
+    height: 10rem;
+}
+
+.scrolling-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    
+}
+    .card {
+      display: inline-block;
+    }
+
+    .btn {
+        background-color: black;
+        color: white;
+       align-items: center;
+       justify-content: center;
+       display: flex;
+    }
+
+    /*checkout page*/
+    @import url(https://fonts.googleapis.com/css?family=Roboto:400,900,700,500);
+
+
+
+.body-text {
+  padding: 0 20px 30px 20px;
+  font-family: "Roboto";
+  font-size: 1em;
+  color: #333;
+  text-align: center;
+  line-height: 1.2em;
+}
+.form-container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card-wrapper {
+  background-color: #6FB7E9;
+  width: 100%;
+  display: flex;
+
+}
+.personal-information {
+  background-color: #3C8DC5;
+  color: #fff;
+  padding: 1px 0;
+  text-align: center;
+}
+h1 {
+  font-size: 1.3em;
+  font-family: "Roboto"
+}
+input {
+  margin: 1px 0;
+  padding-left: 3%;
+  font-size: 14px;
+}
+input[type="text"]{
+  display: block;
+  height: 50px;
+  width: 97%;
+  border: none;
+}
+input[type="email"]{
+  display: block;
+  height: 50px;
+  width: 97%;
+  border: none;
+}
+input[type="submit"]{
+  display: block;
+  height: 60px;
+  width: 100%;
+  border: none;
+  background-color: #3C8DC5;
+  color: #fff;
+  margin-top: 2px;
+  curson: pointer;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+input[type="submit"]:hover{
+  background-color: #6FB7E9;
+  transition: 0.3s ease;
+}
+#column-left {
+  width: 46.5%;
+  float: left;
+  margin-bottom: 2px;
+}
+#column-right {
+  width: 46.5%;
+  float: right;
+}
+
+@media only screen and (max-width: 480px){
+ 
+  .form-container {
+    margin: 0 2%;
+  }
+  input {
+    font-size: 1em;
+  }
+  #input-button {
+    width: 100%;
+  }
+  #input-field {
+    width: 96.5%;
+  }
+  h1 {
+    font-size: 1.2em;
+  }
+  input {
+    margin: 2px 0;
+  }
+  input[type="submit"]{
+    height: 50px;
+  }
+  #column-left {
+    width: 96.5%;
+    display: block;
+    float: none;
+  }
+  #column-right {
+    width: 96.5%;
+    display: block;
+    float: none;
+  }
+}
+  
+.formtext {
+    width: 90%;
+    height: 5rem;
+    margin-left: 2rem;
+}
+
+label {
+    margin-left: 2rem;
+}
+
+input {
+    margin-left: 2rem;
+}
+
+th {
+    border: 1px solid black;
+    padding: 2rem;
+}
+
+tr:nth-child(even) {
+background-color: #dddddd;
+height: 2rem;
+border: 1px solid black;
+}
+
+tr:nth-child(odd) {
+  background-color: lightblue;
+  height: 2rem;
+  border: 1px solid black;  
+}
+
+table {
+    margin-left: 2rem;
+}
+
+.dropdown-menu {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+ul {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+label.cameraButton {
+    display: inline-block;
+    margin: 1em 0;
+  
+    /* Styles to make it look like a button */
+    padding: 0.5em;
+    border: 2px solid #666;
+    border-color: #EEE #CCC #CCC #EEE;
+    background-color: #DDD;
+  }
+  
+  /* Look like a clicked/depressed button */
+  label.cameraButton:active {
+    border-color: #CCC #EEE #EEE #CCC;
+  }
+  
+  /* This is the part that actually hides the 'Choose file' text box for camera inputs */
+  label.cameraButton input[accept*="camera"] {
+    display: none;
+  }
