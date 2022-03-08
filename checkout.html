@@ -217,31 +217,34 @@
         
     </form>
   </div>
+<!--camera -->
 
-<!--javascript-->
-  <div class="camera">
-    <label class="cameraButton">Take a picture
-        <input type="file" accept="image/*" capture="user">
-    </label>
+<div style="display: flex; justify-content: center; align-items: center;">
+<div class="left">
+    <div id="startButton" class="button">
+      Start
+    </div>
+    <h2>Preview</h2>
+    <video id="preview" width="160" height="120" autoplay muted></video>
+  </div>
 
-    <video autoplay></video>
+  <div class="right">
+    <div id="stopButton" class="button" style="margin-top: 1.6rem;">
+      Stop
+    </div>
+    <h2>Recording</h2>
+    <video id="recording" width="160" height="120" controls></video>
+    <a id="downloadButton" class="button">
+      Download
+    </a>
+  </div>
 
-<script>
-const constraints = {
-video: true,
-Audio: true,
-};
-
-const video = document.querySelector("video");
-
-navigator.mediaDevices.getUserMedia(constraints).then((stream) => {
-video.srcObject = stream;
-});
-
-</script>
-
-    
+  <div class="bottom">
+    <pre id="log"></pre>
+  </div>
 </div>
+<!--javascript-->
+<script src="js/CameraRecording.js"></script>
 
 <script src="js/custom.js"></script>
 </body>
