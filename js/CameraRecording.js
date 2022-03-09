@@ -45,8 +45,7 @@ function stop(stream) {
 
 startButton.addEventListener("click", function() {
   navigator.mediaDevices.getUserMedia({
-    video: true,
-    audio: true
+     audio: true, video: { facingMode: "user" } 
   }).then(stream => {
     preview.srcObject = stream;
     downloadButton.href = stream;
